@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,48 @@
   </head>
   <body>
     <div class="main"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html> -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Project</title>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen">
+    <header class="bg-blue-600 text-white p-4 text-center">
+      <h1 class="text-2xl font-bold">Disney Character Finder</h1>
+    </header>
+
+    <main class="p-4 max-w-6xl mx-auto">
+      <!-- Search Form -->
+      <form id="searchForm" class="flex gap-2 mb-6">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search character name..."
+          class="flex-1 p-2 border rounded"
+          aria-label="Search Disney characters"
+        />
+        <button
+          type="submit"
+          class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >
+          Search
+        </button>
+      </form>
+
+      <!-- API Results -->
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 main"
+        aria-live="polite"
+      ></section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
